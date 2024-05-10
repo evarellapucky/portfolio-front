@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Showdown from "showdown";
-import { useParams } from "react-router-dom"; 
+import { useParams, Link } from "react-router-dom"; 
+
 
 export default function ProjectDetail () {
   const {slug} = useParams();
@@ -19,12 +20,14 @@ export default function ProjectDetail () {
   return (
     <>
     <h1>Détail du projet</h1>
+    <Link to="/works/projects">Retour</Link>
       {projectDetail === null ? (
         <p>Loading...</p>
       ) : (
         <div>
           <h2>{projectDetail.attributes.name}</h2>
           <p>{projectDetail.attributes.release}</p>
+          <p>{projectDetail.attributes.description}</p>
           {projectDetail.attributes.content && (
             <div dangerouslySetInnerHTML={{ __html: new Showdown.Converter().makeHtml(projectDetail.attributes.content) }} /> 
            )} 

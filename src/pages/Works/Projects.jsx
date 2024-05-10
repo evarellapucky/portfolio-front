@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Showdown from 'showdown';
+
 import { Link } from 'react-router-dom';
 
 
@@ -25,9 +25,7 @@ export default function Projects() {
             <div key={project.id}>
               <h2>{project.attributes.name}</h2>
               <p>{project.attributes.release}</p>
-              {/* {project.attributes.description && ( */}
-                <p dangerouslySetInnerHTML={{__html: new Showdown.Converter().makeHtml(project.attributes.content)}} />
-              {/* )} */}
+              <p>{project.attributes.description}</p>
               <Link to={`/works/projects/${project.attributes.slug}`}>Voir plus de détails</Link>
            </div>
           ))
