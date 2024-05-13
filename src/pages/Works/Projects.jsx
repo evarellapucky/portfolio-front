@@ -24,7 +24,7 @@ export default function Projects() {
         ) : (
           projects.map((project) => (
             <div key={project.id}>
-              <img src={project.attributes.picture.data.formats.thumbnail.url} alt={project.attributes.name} />
+              {/* <img src={project.attributes.picture.data.formats.thumbnail.url} alt={project.attributes.name} /> */}
               <h2>{project.attributes.name}</h2>
               <p>{project.attributes.release}</p>
               <p>{project.attributes.description}</p>
