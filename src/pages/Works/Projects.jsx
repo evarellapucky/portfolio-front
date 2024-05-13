@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-
 import { Link } from 'react-router-dom';
 
 
@@ -14,6 +13,8 @@ export default function Projects() {
       .catch((error) => console.error('Error fetching projects:', error));
   }, []);
 
+// http://localhost:1337/api/projects?populate=* => url pour trouver les images
+
   return (
     <>
       <h1>Mes projets</h1>
@@ -23,6 +24,7 @@ export default function Projects() {
         ) : (
           projects.map((project) => (
             <div key={project.id}>
+              <img src={project.attributes.picture.data.formats.thumbnail.url} alt={project.attributes.name} />
               <h2>{project.attributes.name}</h2>
               <p>{project.attributes.release}</p>
               <p>{project.attributes.description}</p>
