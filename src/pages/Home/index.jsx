@@ -5,7 +5,7 @@ const Home = () => {
     <>
       <div className="jumbotron jumbotron-fluid m-4">
         <div className="container">
-          <h1 className="display-4">Hello, I'm Alexia</h1>
+          <h1 className="display-4">Hello, I am Alexia</h1>
           <h3 className="display-6">Bienvenue sur mon portfolio</h3>
           <p className="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
           <p>Envie de me contacter ?</p>

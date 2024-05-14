@@ -1,6 +1,6 @@
 const Contact = () => {
   return (
-    <form className="m-5" style={{ width: "26rem" }}>
+    <form className="contact-form mt-5">
   {/* <!-- Name input --> */}
   <div data-mdb-input-init className="form-outline mb-4">
     <input type="text" id="form4Example1" className="form-control" />
