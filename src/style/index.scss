@@ -249,16 +249,14 @@ footer {
   border: 2px solid #4F80CF;
 }
 .px-btn {
-  padding: 0 20px;
+  padding: 5px 15px;
+  margin: 5px;
   line-height: 42px;
   border: 2px solid transparent;
   position: relative;
   display: inline-block;
   background: none;
   border: none;
-  -moz-transition: ease all 0.35s;
-  -o-transition: ease all 0.35s;
-  -webkit-transition: ease all 0.35s;
   transition: ease all 0.35s;
   border-radius: 5px;
   font-size: 16px;
@@ -309,5 +307,8 @@ footer {
   filter: blur(10px); /* Apply blur effect on hover */
 }
 
+.about-section h2 {
+  text-align: left;
+}
 
 //  voir https://codepen.io/BjornRombaut/pen/mOLGgX

@@ -1,4 +1,5 @@
 import Pizzacat from '../../assets/images/pizza-cat.jpg';
+import { Link } from 'react-router-dom';
 
 const About = () => { 
 return (
@@ -7,13 +8,13 @@ return (
         <div className="row align-items-center justify-content-around flex-row-reverse">
             <div className="col-lg-6">
                 <div className="about-text">
-                    <h3 className="dark-color">Do some awsome stuff with me.</h3>
+                    <h2 className="dark-color">About Me</h2>
                     <h4 className="theme-color">UI / UX Designer &amp; Web Developer</h4>
-                    <p>I design and develop services for customers of all sizes, specializing in creating stylish, modern websites, web services and online stores. My passion is to design digital user experiences through the bold interface and meaningful interactions.</p>
-                    <p>I design and develop services for customers of all sizes, specializing in creating stylish, modern websites, web services and online stores.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit maiores tenetur reprehenderit quam quaerat, eum sapiente repellat, tempore placeat non fugiat a exercitationem explicabo voluptatem est vitae optio mollitia numquam.</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur voluptate consectetur, doloribus nobis, molestiae dolore voluptates voluptatem totam cum reprehenderit quis vero. Minima alias perspiciatis reiciendis explicabo unde molestias temporibus?</p>
                     <div className="btn-bar">
-                        <a className="px-btn theme" href="#">View Works</a>
-                        <a className="px-btn theme-t" href="#">Download CV</a>
+                        <Link className="px-btn theme" to="/Works">View Works</Link>
+                        <Link className="px-btn theme-t" to="">Download CV</Link>
                     </div>
                 </div>
             </div>
