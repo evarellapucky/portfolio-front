@@ -43,7 +43,7 @@ const About = () => {
                   </li>
                   <li>
                   <i className="bi bi-caret-right-fill"></i>
-                    <strong>Country:</strong> <span>France</span>
+                    <strong>Dans une vie antérieure: </strong> <span>Bibliothécaire</span>
                   </li>
                 </ul>
               </div>
@@ -51,11 +51,11 @@ const About = () => {
                 <ul>
                   <li>
                   <i className="bi bi-caret-right-fill"></i>
-                    <strong>Country:</strong> <span>France</span>
+                    <strong>Formation:</strong> <span>THP en force !</span>
                   </li>
                   <li>
                   <i className="bi bi-caret-right-fill"></i>
-                    <strong>Country:</strong> <span>France</span>
+                    <strong>Intérêts :</strong> <span>les chats !</span>
                   </li>
                 </ul>
               </div>

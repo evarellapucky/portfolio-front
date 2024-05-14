@@ -2,6 +2,18 @@ body.dark-theme {
   color: #D4E2F8;
   background-color: $dark-primary-bg;
 
+  h1, h2, h3 {
+    color: $secondary-bg;
+  
+  }
+
+  .about-me .content h3 {
+    text-align: left;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: $secondary-bg;
+  }
+
   .navbar, .navbar-brand, .nav-link {
     background-color: #18202c;
     color: #D4E2F8;
@@ -14,7 +26,8 @@ body.dark-theme {
     background-color: #18202cad;
     color: #D4E2F8;
     width: 100%;
-    position: absolute; 
+    position: fixed; 
+    left: o;
     bottom: 0;
     z-index: 10;
   }
