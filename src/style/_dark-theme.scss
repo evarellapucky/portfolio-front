@@ -1,0 +1,25 @@
+body.dark-theme {
+  color: #D4E2F8;
+  background-color: $dark-primary-bg;
+
+  .navbar, .navbar-brand, .nav-link {
+    background-color: #18202c;
+    color: #D4E2F8;
+  } 
+  .area {
+    background-color: $dark-secondary-bg;
+  }
+
+  footer {
+    background-color: #18202cad;
+    color: #D4E2F8;
+    width: 100%;
+    position: absolute; 
+    bottom: 0;
+    z-index: 10;
+  }
+
+  h3 {
+    color: #91B7F3;
+  }
+}

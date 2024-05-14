@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import { useThemeUpdate } from "../ThemeContext";
+import theme from "../assets/images/premier-quart.png"
+import home from "../assets/images/accueil.png"
 
 const Navbar = () => {
       // const darkTheme = useTheme()
@@ -8,10 +10,15 @@ const Navbar = () => {
   return (
   <nav className="navbar navbar-expand-lg">
     <div className="container-fluid">
-    <Link to="/" className="navbar-brand">Alexia Scherer</Link>
+    <Link to="/" className="btn navbar-brand">
+      <img src={home} alt="icône d'accueil"/>
+    </Link>
   <div className="pages__links collapse navbar-collapse justify-content-around">
    
   <ul className="navbar-nav">
+  <li className="nav-item">
+          <Link to="/" className="nav-link link1">Home</Link>
+        </li>
     <li className="nav-item">
           <Link to="/About" className="nav-link link1">About</Link>
         </li>
@@ -24,7 +31,9 @@ const Navbar = () => {
         </li>
       </ul>
       </div>
-    <button type="button" className="btn btn-primary" onClick={toggleTheme}>changer le thème</button>
+    <button type="button" className="btn" onClick={toggleTheme}>
+      <img src={theme} alt="changement de thème"/>
+    </button>
     </div>
     </nav> 
 

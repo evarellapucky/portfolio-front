@@ -10,6 +10,7 @@ import CaseStudies from './pages/Works/CaseStudies';
 import Projects from './pages/Works/Projects';
 import ProjectDetail from './pages/Works/ProjectDetail';
 import { useTheme } from './ThemeContext';
+import Footer from './Components/Footer';
 
 
 function App() {
@@ -43,7 +44,7 @@ function App() {
                 <Route path='/contact' element={<Contact />} />
               </Routes>
           </main>
-         
+         <Footer />
         </BrowserRouter>
         
     </>
