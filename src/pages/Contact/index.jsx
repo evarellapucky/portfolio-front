@@ -1,6 +1,11 @@
+import SectionTitle from "../../Components/SectionTitle";
+
 const Contact = () => {
   return (
-    <form className="contact-form mt-5">
+    <section id="contact" className="contact">
+    <div className="container contact-page">
+      <SectionTitle title="Contact" subtitle="Let us get in touch"/>
+      <form className="contact-form mt-5">
   {/* <!-- Name input --> */}
   <div data-mdb-input-init className="form-outline mb-4">
     <input type="text" id="form4Example1" className="form-control" />
@@ -36,6 +41,8 @@ const Contact = () => {
   {/* <!-- Submit button --> */}
   <button data-mdb-ripple-init type="button" className="btn btn-primary btn-block mb-4">Send</button>
 </form>
+    </div>
+  </section>
   )
 }
 export default Contact;

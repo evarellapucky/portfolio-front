@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from 'react-router-dom';
+import SectionTitle from "../../Components/SectionTitle";
 
 
 export default function Projects() {
@@ -19,8 +20,9 @@ export default function Projects() {
 // http://localhost:1337/api/projects?populate=* => url pour trouver les images
 
   return (
-    <>
-      <h1>Mes projets</h1>
+    <section id="projects" className="projects">
+      <div className="container my-projects">
+      <SectionTitle title="projects" subtitle="Take a look"/>
       <div className="row">
       
         {/* <div className="card"> */}
@@ -42,9 +44,8 @@ export default function Projects() {
           ))
         )}
         </div>
-    
-      {/* </div> */}
-    </>
-  );
+        </div>
+      </section>
+  )
 }
 

@@ -1,11 +1,23 @@
-// import Pizzacat from '../../assets/images/pizza-cat.jpg';
-// import { Link } from 'react-router-dom';
+import { useState } from "react";
 import SectionTitle from "../../Components/SectionTitle";
 import Pizzacat from "../../assets/images/pizza-cat.jpg";
 import "bootstrap-icons/font/bootstrap-icons.css";
-import Ruby from "../../assets/images/ruby.png";
+import CardsData from "../../Components/CardsData";
+// import Ruby from "../../assets/images/ruby.png";
+// import Rails from "../../assets/images/rails.png";
+// import ReactLogo from "../../assets/images/react.png";
+// import Bootstrap from "../../assets/images/bootstrap.png";
 
 const About = () => {
+  const [flipCards, setFlipCards] = useState({});
+
+  const handleClick = (index) => {
+    setFlipCards((prevFlipCards) => ({
+      ...prevFlipCards,
+      [index]: !prevFlipCards[index],
+    }));
+  };
+
   return (
     <section id="about" className="about">
       <div className="container about-me">
@@ -56,30 +68,33 @@ const About = () => {
               consectetur adipisicing elit. Assumenda corporis soluta
               repudiandae maxime fugiat, deleniti, molestias nam iure aliquid ut
               quis! Blanditiis totam, accusamus voluptate assumenda ea dolore ut
-              cupiditate? Lorem ipsum dolor, sit amet consectetur adipisicing
-              elit. Aperiam ducimus officia fugit facere velit asperiores ex ad,
-              a iusto dolore cumque dolores animi hic vero praesentium
-              laudantium eius recusandae similique.
+              cupiditate?
             </p>
           </div>
         </div>
-        {/* <SectionTitle title="Skills" subtitle="WHat I learned" />
-        <div className="row skills">
-          <div className="col-lg-4">
-            <div className="row">
-              <div className="skill-box">
-              <div className="col-lg-6 img-box">
-                <img src={Ruby} alt="" />
+        <SectionTitle title="Skills" subtitle="What I learned" />
+        <div className="card-grid">
+          {CardsData.map((card, index) => (
+            <div
+              key={index}
+              className={`card${flipCards[index] ? " is-flipped" : ""}`}
+              onClick={() => handleClick(index)}
+            >
+              <div className="front">
+                <img src={card.frontImage} alt={card.alt} />
               </div>
-              <div className="col-lg-6">
-                <p>Ruby</p>
-              </div>
+              <div className="back">
+                <h3>{card.backTitle}</h3>
               </div>
             </div>
-          </div>
-        </div> */}
+          ))}
+        </div>
       </div>
     </section>
+  );
+};
+
+export default About;
 
     /* <section className="section about-section mt-5" id="about">
     <div className="container">
@@ -104,7 +119,4 @@ const About = () => {
         </div>
     </div>
 </section> */
-  );
-};
 
-export default About;

@@ -1,11 +1,16 @@
+import SectionTitle from "../../Components/SectionTitle";
 import WorksNavbar from "../../Components/WorksNavbar";
 
 const Works = () => {
   return (
   <>
-    <h1>Welcome on the Works page</h1>
-    <p>Please select a category</p>
-      <WorksNavbar />
+    <section id="works" className="works">
+      <div className="container all-works">
+        <SectionTitle title="Works" subtitle="Please select"/>
+        <WorksNavbar />
+      </div>
+    </section>
+
   </>      
   )
 }
