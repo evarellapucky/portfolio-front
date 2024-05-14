@@ -5,6 +5,7 @@ import Navbar from "./Components/Navbar";
 import { useTheme } from "./ThemeContext";
 import Footer from "./Components/Footer";
 
+
 function App() {
   const darkTheme = useTheme();
 

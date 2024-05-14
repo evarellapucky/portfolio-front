@@ -2,7 +2,7 @@
 // import { Link } from 'react-router-dom';
 import SectionTitle from "../../Components/SectionTitle";
 import Pizzacat from "../../assets/images/pizza-cat.jpg";
-// import "bootstrap-icons/icons";
+import "bootstrap-icons/font/bootstrap-icons.css";
 import Ruby from "../../assets/images/ruby.png";
 
 const About = () => {
@@ -26,11 +26,11 @@ const About = () => {
               <div className="col-lg-6">
                 <ul>
                   <li>
-                    <i>=</i>
+                  <i className="bi bi-caret-right-fill"></i>
                     <strong>Country:</strong> <span>France</span>
                   </li>
                   <li>
-                    <i>=</i>
+                  <i className="bi bi-caret-right-fill"></i>
                     <strong>Country:</strong> <span>France</span>
                   </li>
                 </ul>
@@ -38,11 +38,11 @@ const About = () => {
               <div className="col-lg-6">
                 <ul>
                   <li>
-                    <i>=</i>
+                  <i className="bi bi-caret-right-fill"></i>
                     <strong>Country:</strong> <span>France</span>
                   </li>
                   <li>
-                    <i>=</i>
+                  <i className="bi bi-caret-right-fill"></i>
                     <strong>Country:</strong> <span>France</span>
                   </li>
                 </ul>
@@ -63,7 +63,7 @@ const About = () => {
             </p>
           </div>
         </div>
-        <SectionTitle title="Skills" subtitle="WHat I learned" />
+        {/* <SectionTitle title="Skills" subtitle="WHat I learned" />
         <div className="row skills">
           <div className="col-lg-4">
             <div className="row">
@@ -77,7 +77,7 @@ const About = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
 
